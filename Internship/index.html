@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e75ac4b88.js" crossorigin="anonymous"></script>
+    <style>
+        /* Style placeholder text */
+        input::placeholder {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            /* Adjust font weight as needed */
+            font-style: normal;
+            color: #aaa;
+            /* Placeholder color */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container" id="main">
+            <div class="img">
+                <img src="https://i.ibb.co/Gv44RVg/pexels-mo3ath-photos-110226063-19769179.jpg" alt="Signup Image">
+            </div>
+            <div class="form">
+                <h1 class="logo">Leaf</h1>
+                <form action="" onsubmit="return false;">
+                    <h2 class="form-title">Create Account</h2>
+                    <div class="form-field">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="&#xf2bd; Enter Full Name"
+                            required />
+                    </div>
+                    <div class="form-field">
+                        <label for="email"> Email</label>
+                        <input type="email" name="email" id="email" placeholder="&#xf0e0; Your Email" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="&#xf023; Password" required />
+                    </div>
+                    <button class="signup-btn" onclick="button_signup()">Signup</button>
+
+                    <p class="or">-- OR --</p>
+
+                    <div class="social-login">
+                        <button class="google-btn"><i class="fab fa-google"></i></button>
+                        <button class="facebook-btn"><i class="fab fa-facebook"></i></button>
+                        <button class="apple-btn"><i class="fab fa-apple"></i></button>
+
+                    </div>
+
+                    <p class="already">Already have an account? <a href="#" onclick="toggleForm();">Sign in.</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
